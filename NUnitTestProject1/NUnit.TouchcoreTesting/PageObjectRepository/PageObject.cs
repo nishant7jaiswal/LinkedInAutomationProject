@@ -14,8 +14,6 @@ namespace NUnit.TouchcoreTesting
     // Home screen objects
     public static By newsFeedElement = By.Id("ozfeed");
     public static By UsernameHome = By.XPath("//div[@class='profile-rail-card__actor-link t-16 t-black t-bold']");
-
-
         
         // Profile screen objects
     public static By fullNameElement = By.XPath("full-name");

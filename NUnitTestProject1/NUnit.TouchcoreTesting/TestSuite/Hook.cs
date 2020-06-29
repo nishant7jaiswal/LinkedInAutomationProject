@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using System;
 using System.Collections.Generic;
@@ -21,14 +22,31 @@ namespace NUnit.TouchcoreTesting
             driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             
         }
-        public String email = " jaiswalnr2@rknec.edu"; // Replace with valid regstered email on linkedin
+        public String email = "njtester274@gmail.com"; // Replace with valid regstered email on linkedin
         public String password = "Test@1234"; // Replace with valid password used when registering
         public String username = "Nishant"; // Replace with valid username used when registering
+        public string Homepagename = "Welcome, Nishant!";
         public String fullName = "Nishant TestAccount";
         public String locality = "India";
         public String linkedinURL = "https://www.linkedin.com/login";
-        public PageAction pageActions = new PageAction();
-        public Validation validations = new Validation();
+        public LoginLogout login_logout;
+        public ProfilePage profile_page;
+        public Validation validations;
+
+        [SetUp]
+        public void SetUp()
+        {
+            login_logout = new LoginLogout();
+             validations = new Validation();
+            profile_page = new ProfilePage();
+
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            driver.Quit();
+        }
 
     }
 

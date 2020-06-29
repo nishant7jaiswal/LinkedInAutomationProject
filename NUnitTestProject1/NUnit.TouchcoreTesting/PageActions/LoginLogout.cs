@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NUnit.TouchcoreTesting
 {
-    public class PageAction
+    public class LoginLogout
     {
 
         BasicMethods basicMethod = new BasicMethods();
@@ -32,10 +32,7 @@ namespace NUnit.TouchcoreTesting
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
     }
 
-    public void navigatetoProfile(IWebDriver driver)
-    {
-            basicMethod.clickElement(driver,PageObject.UsernameHome);
-    }
+    
 
     public void Logout(IWebDriver driver)
     {
@@ -44,22 +41,7 @@ namespace NUnit.TouchcoreTesting
             builder.MoveToElement(driver.FindElement(PageObject.logoutButton)).Click().Perform();
     }
 
-    public void Editprofileheadlinerandomdata(IWebDriver driver)
-    {
-            basicMethod.clickElement(driver, PageObject.editProfileLink);
-            basicMethod.sendKeys(driver, PageObject.addheadline, basicMethod.randomdatagenerator());
-            basicMethod.clickElement(driver, PageObject.saveProfile);
-    }
-
-        public void EditprofileIndustrydropdown(IWebDriver driver)
-        {
-            basicMethod.clickElement(driver, PageObject.editProfileLink);
-            Thread.Sleep(8000);
-            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-            js.ExecuteScript("window.scrollBy(0,document.body.scrollHeight)");
-            basicMethod.clickElement(driver, PageObject.addheadline);
-            basicMethod.clickElement(driver, PageObject.saveProfile);
-        }
+    
 
 
     }

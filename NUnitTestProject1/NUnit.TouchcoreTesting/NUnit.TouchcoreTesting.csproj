@@ -47,14 +47,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicMethods.cs" />
-    <Compile Include="Hook.cs" />
-    <Compile Include="PageAction.cs" />
-    <Compile Include="PageObject.cs" />
-    <Compile Include="TestClass.cs" />
-    <Compile Include="Validation.cs" />
+    <Compile Include="PageActions\ProfilePage.cs" />
+    <Compile Include="Utilities\BasicMethods.cs" />
+    <Compile Include="TestSuite\Hook.cs" />
+    <Compile Include="PageActions\LoginLogout.cs" />
+    <Compile Include="PageObjectRepository\PageObject.cs" />
+    <Compile Include="TestSuite\TestClass.cs" />
+    <Compile Include="Utilities\Validation.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Graph1.dgml" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

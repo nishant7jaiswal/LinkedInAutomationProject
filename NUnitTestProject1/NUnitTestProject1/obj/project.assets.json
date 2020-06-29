@@ -5754,11 +5754,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nishant.jaiswal\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\TouchCoreTestingAssignment.csproj",
+      "projectUniqueName": "C:\\Users\\nishant.jaiswal\\Desktop\\UserAssignment\\NUnitTestProject1\\NUnitTestProject1\\TouchCoreTestingAssignment.csproj",
       "projectName": "TouchCoreTestingAssignment",
-      "projectPath": "C:\\Users\\nishant.jaiswal\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\TouchCoreTestingAssignment.csproj",
+      "projectPath": "C:\\Users\\nishant.jaiswal\\Desktop\\UserAssignment\\NUnitTestProject1\\NUnitTestProject1\\TouchCoreTestingAssignment.csproj",
       "packagesPath": "C:\\Users\\nishant.jaiswal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nishant.jaiswal\\source\\repos\\NUnitTestProject1\\NUnitTestProject1\\obj\\",
+      "outputPath": "C:\\Users\\nishant.jaiswal\\Desktop\\UserAssignment\\NUnitTestProject1\\NUnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
